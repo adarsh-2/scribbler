@@ -1,0 +1,14 @@
+.topButtons {
+    width: 100px;
+    height: 40px;
+    padding: 8px 5px 8px 5px;
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 90%;
+    background: #0000ff;
+    color: #fff;
+    float: right;                  
+    border-color: white;
+    margin: 0px 0px 0px 10px;
+    font-family: Arial, Helvetica, sans-serif;
+}    
