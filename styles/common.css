@@ -73,4 +73,29 @@
   .modal-content .modal-heading {
     margin: 0;
   }
+
+  .not-member {
+    text-align: center;
+    margin: 10px;
+    font-weight: bold;
+    font-size: 12px;
+  }
   
+  .not-member span {
+    color: blue;
+    cursor: pointer;
+  }
+  
+  /* The Close Button */
+  .close-icon {
+    float: right;
+    cursor: pointer;
+  }
+  
+  input {
+    background-color: #f1f1f1 !important;
+  }
+  
+  .btn-success {
+    margin-top: 30px;
+  }
