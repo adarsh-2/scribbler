@@ -16,35 +16,34 @@ openDeletePostModal = (deletePostModal, clickedIcon) => {
 };
 
 deletePost = () => {
-    selectedPost.remove();
-    closeModal(deletePostModal);
-  };
-  
-  // Event handlers
-  deleteIconsArray.map(deleteIcon => {
-      deleteIcon.addEventListener("click", e =>
-        openDeletePostModal(deletePostModal, e.target)
-      );
-  });
-  
-  window.addEventListener("click", function(event) {
-      if (event.target == deletePostModal) {
-        deletePostModal.style.display = "none";
-      }
-  });
-  
-  cancelDelete.addEventListener("click", () => closeModal(deletePostModal));
-  confirmDelete.addEventListener("click", () => deletePost());
-  
-  // Search the dots
-  var dots = document.querySelectorAll(".dots");
-  var dotsArray = Array.from(dots);
-  
-  dotsArray.map(dot => {
-      dot.addEventListener("click", e => navigateToPost(e.target));
-  });
+  selectedPost.remove();
+  closeModal(deletePostModal);
+};
 
-  
+// Event handlers
+deleteIconsArray.map(deleteIcon => {
+    deleteIcon.addEventListener("click", e =>
+      openDeletePostModal(deletePostModal, e.target)
+    );
+});
+
+window.addEventListener("click", function(event) {
+    if (event.target == deletePostModal) {
+      deletePostModal.style.display = "none";
+    }
+});
+
+cancelDelete.addEventListener("click", () => closeModal(deletePostModal));
+confirmDelete.addEventListener("click", () => deletePost());
+
+// Search the dots
+var dots = document.querySelectorAll(".dots");
+var dotsArray = Array.from(dots);
+
+dotsArray.map(dot => {
+    dot.addEventListener("click", e => navigateToPost(e.target));
+});
+
 navigateToPost = postThread => {
     var post = postThread.closest(".post");
     var author = post.querySelector(".username p").textContent.trim();
