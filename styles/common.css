@@ -25,3 +25,23 @@
     color: blue;
     margin: 0;
 }
+
+.sub-title {
+    font-family: 'Ubuntu Mono', monospace;
+    font-size: 10;
+    color: black;
+    margin: 0;
+}
+
+.container {
+    width: 100%;
+    margin-right: 0px !important;
+    margin-left: 0px !important;
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 10px;
+}
