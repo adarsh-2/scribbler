@@ -47,3 +47,57 @@ section {
 .post-content {
     margin-bottom: 20px;
 }
+
+
+#author {
+    font-size: 17px;
+}
+
+.btn-common,
+.btn-common:hover,
+.btn-common:focus {
+  border-radius: 0;
+  background-color: #ed2553;
+  border: none;
+  padding: 5px 15px;
+  box-shadow: 0px 5px 20px rgba(237, 37, 83, 0.4);
+}
+
+.editable {
+  outline: 1px solid pink;
+}
+
+.author-edit-wrapper {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+#commentBox {
+    width: 70%;
+    min-height: 100px;
+}
+
+.comment-button {
+    margin-bottom: 20px;
+}
+
+.all-comments-text {
+    font-weight: bold;
+}
+
+#commentsWrapper {
+    background-color: lightgray;
+    padding: 15px 5px;
+    width: 70%;
+}
+
+#commentsWrapper p {
+    background-color: white;
+    padding: 10px 10px;
+}
+
+#likeText {
+    margin-top: 5px;
+    margin-bottom: 20px;
+}
